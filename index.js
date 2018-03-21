@@ -47,5 +47,3 @@ app.listen(process.env.PORT, process.env.IP, function(req, res){
 });
     
     
-client ID:86267265415-02dm1b1vlf377se2l9tl3qor5tde003v.apps.googleusercontent.com
-client secret:iTKHrHd8rkhgQ6xKMjrqLCqY
