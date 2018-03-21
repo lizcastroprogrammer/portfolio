@@ -1,0 +1,550 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 1700px;
+}
+
+.background-image {
+  position: relative;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ), url(https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?h=350&auto=compress&cs=tinysrgb);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  margin: 0;
+  height: 1100px;
+}
+
+#self-image {
+  margin-top: 95px;
+  width: ;
+  border-radius: 50%;
+  border: 17px solid 	rgba(164,171,169, .2);
+  z-index: 1;
+  box-shadow: none;
+}
+
+h1 {
+  font-size: 160px;
+  color: white;
+  margin: 10px 5px 0px 5px;
+  font-family: Oxygen;
+}
+
+h3 {
+  font-size: 100px;
+  color: white;
+  margin: 0px 5px 10px 5px;
+  font-family: Oxygen;
+}
+
+.main-container {
+  position: relative;
+  text-align: center;
+  padding-top: 190px;
+  margin-left: 280px;
+  margin-right: 280px;
+}
+
+.box {
+  margin-top: 20px;
+  border: solid 1px white;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-family: Oxygen;
+  font-size: 23px;
+}
+
+.link:hover {
+  color: #B5BCBA;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #343437;
+  height: 70px;
+  width: 100%;
+  border-top: 1px solid 	rgb(192,192,192);
+  border-bottom: 1px solid 	rgb(192,192,192);
+  padding-right: 680px;
+  padding-left: 680px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.about-me {
+  background-color: #6EA195;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 110px;
+  font-family: Oxygen;
+  color: white;
+}
+
+#about-name {
+  font-size: 35px;
+  margin-bottom: 65px;
+}
+
+.about-description {
+  padding-left: 150px;
+  padding-right:150px;
+  font-size: 25px;
+}
+
+#about-title {
+  padding-top: 60px;
+}
+
+.portfolio {
+  height: 680px;
+  background-color: white;
+}
+
+.portfolio-title {
+  padding-top: 60px;
+  color: #27302E;
+  padding-bottom: 70px;
+}
+
+.contact {
+  background-color: #D7DBDA;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-image {
+  height: 270px;
+  width: 270px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.container {
+  padding: 0;
+}
+
+img {
+  box-shadow: 5px 5px 18px #888888;
+  height: 270px;
+  width: 310px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+form {
+  margin-left: 780px;
+  margin-top: 80px;
+}
+
+.form-control {
+  height: 60px;
+  width: 500px;
+  margin-top: 15px;
+  font-size: 20px;
+  border: none;
+  font-size: 35px;
+
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: 5px 5px 18px #888888;
+  border: none;
+}
+
+#contact-paragraph {
+  color: #27302E;
+  font-family: Oxygen;
+  font-size: 30px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-title {
+  padding-top: 60px;
+  color: #27302E;
+  padding-bottom: 5px;
+}
+
+.fa {
+  background-color: #3B5998;
+  border-radius: 15%;
+  font-size: 28px;
+  height: 45px;
+  line-height: 40px;
+  margin: 5px;
+  text-align: center;
+  width: 45px;
+  border: 1px solid #3B5998;
+  color: white;  
+}
+
+.fa:hover {
+  text-decoration: none;
+}
+
+.social-media-icons {
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 576px) { 
+.main-container {
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+  #self-image {
+  margin-top: 95px;
+  width: 45%;
+}
+  .box {
+  margin-top: 0px;
+  border: none;
+}
+  h1 {
+  font-size: 70px;
+  margin: 0 5px 0px 5px;
+}
+
+  h3 {
+  font-size: 40px;;
+  margin: 0px 5px 10px 5px;
+}
+  .background-image {
+  height: 750px;
+}
+  h2 {
+  font-size: 80px;
+}
+  #about-name {
+  font-size: 25px;    
+}
+  .about-description {
+  padding-left: 20px;
+  padding-right:20px;
+  font-size: 22px;
+}
+  .about-me {
+    height: 650px;
+  }
+   .navbar {
+  height: 60px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+  .portfolio {
+  height: 1200px;
+}
+  .portfolio-image {
+  margin-left: 85px;
+}
+  #contact-paragraph {
+  font-size: 20px;
+}
+  form {
+  margin-left: 25px;
+    padding-bottom: 90px;
+}
+}
+@media screen and (min-width: 768px) { 
+ .main-container {
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+  #self-image {
+  margin-top: 100px;
+  width: 35%;
+}
+  .box {
+  margin-top: 0px;
+  border: 1px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  h1 {
+  font-size: 80px;
+  margin: 0 5px 0px 5px;
+}
+
+  h3 {
+  font-size: 45px;;
+  margin: 0px 5px 10px 5px;
+}
+  .background-image {
+  height: 800px;
+}
+  h2 {
+  font-size: 80px;
+}
+  #about-name {
+  font-size: 25px;    
+}
+  .about-description {
+  padding-left: 20px;
+  padding-right:20px;
+  font-size: 22px;
+}
+  .about-me {
+    height: 540px;
+  }
+   .navbar {
+  height: 70px;
+  width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+  .portfolio {
+  height: 1200px;
+}
+  .portfolio-image {
+  margin-left: 175px;
+    margin-right: 30px;
+}
+  .contact {
+  height: 670px;
+}
+  #contact-paragraph {
+  font-size: 20px;
+    margin-left: 13px;
+    margin-right: 13px;
+    
+}
+  form {
+  margin-left: 150px;
+    padding-bottom: 30px;
+} 
+}
+@media screen and (min-width: 992px) { 
+ .main-container {
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+  #self-image {
+  margin-top: 125px;
+  width: 25%;
+}
+  .box {
+  border: 1px solid white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+  h1 {
+  font-size: 90px;
+  margin: 0 5px 0px 5px;
+}
+
+  h3 {
+  font-size: 50px;;
+  margin: 0px 5px 10px 5px;
+}
+  .background-image {
+  height: 840px;
+}
+  h2 {
+  font-size: 80px;
+}
+  #about-name {
+  font-size: 25px;    
+}
+  .about-description {
+  padding-left: 50px;
+  padding-right:50px;
+  font-size: 22px;
+}
+  .about-me {
+    height: 500px;
+  }
+   .navbar {
+  height: 70px;
+  width: 100%;
+  padding-right: 165px;
+  padding-left: 165px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+  .portfolio {
+  height: 1200px;
+}
+  .portfolio-image {
+  margin-left: 285px;
+}
+  #contact-paragraph {
+  font-size: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+  form {
+  margin-left:240px;
+    padding-bottom: 70px;
+}
+  .contact {
+  height: 730px;
+}
+}
+@media screen and (min-width: 1200px) { 
+ #self-image {
+  margin-top: 0;
+  width: 26%;
+}
+
+h1 {
+  font-size: 110px;
+  margin: 5px 5px 0px 5px;
+}
+
+h3 {
+  font-size: 70px;;
+  margin: 0px 5px 10px 5px;
+}
+
+.main-container {
+  padding-top: 100px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.box {
+  margin-top: 20px;
+  border: solid 1px white;
+}
+
+.link {
+  font-size: 30px;
+}
+
+.link:hover {
+  color: #B5BCBA;
+  text-decoration: none;
+}
+
+.navbar {
+  padding-right: 320px;
+  padding-left: 320px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.about-me {
+  background-color: #6EA195;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 110px;
+  font-family: Oxygen;
+  color: white;
+}
+
+#about-name {
+  font-size: 35px;
+  margin-bottom: 65px;
+}
+
+.about-description {
+  padding-left: 150px;
+  padding-right:150px;
+  font-size: 25px;
+}
+
+#about-title {
+  padding-top: 60px;
+}
+
+.portfolio {
+  height: 680px;
+  background-color: white;
+}
+
+.portfolio-title {
+  padding-top: 60px;
+  color: #27302E;
+  padding-bottom: 70px;
+}
+
+.contact {
+  background-color: #D7DBDA;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-image {
+  height: 270px;
+  width: 270px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.container {
+  padding: 0;
+}
+
+img {
+  box-shadow: 5px 5px 18px #888888;
+  height: 270px;
+  width: 310px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+form {
+  margin-left: 460px;
+  margin-top: 80px;
+}
+
+.form-control {
+  height: 60px;
+  width: 500px;
+  margin-top: 15px;
+  font-size: 20px;
+  border: none;
+  font-size: 35px;
+
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: 5px 5px 18px #888888;
+  border: none;
+}
+
+#contact-paragraph {
+  color: #27302E;
+  font-family: Oxygen;
+  font-size: 30px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-title {
+  padding-top: 60px;
+  color: #27302E;
+  padding-bottom: 5px;
+}
+}

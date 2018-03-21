@@ -1,0 +1,76 @@
+<!doctype html>
+    <html>
+        <head>
+            <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+    <body>
+        <div class="background-image">
+            <a id="home">
+            <div class="main-container">
+                <div class="image-self">
+                    <img id="self-image" src="https://i.imgur.com/4Cyueu9.jpg?2">
+                </div>
+                <div class="box">  
+                    <h1>Elizabeth Castro</h1>
+                    <h3>Web Developer</h3>
+                </div>
+            </div>
+            </a>
+        </div>
+    <nav class="navbar sticky-top navbar-dark indigo">
+      <a class="link" href="#home">HOME</a>
+      <a class="link" href="#about">ABOUT</a>
+      <!--<a class="link" href="#">MY SKILLS</a>
+      <a class="link" href="#">EXPERIENCE/EDUCATION</a>-->
+      <a class="link" href="#portfolio">PORTFOLIO</a>
+      <a class="link" href="#contact">CONTACT</a>
+    </nav>
+    
+    <div class="about-me">
+        <a id="about">
+        <h2 id="about-title">ABOUT ME</h2>
+        <p id="about-name">ELIZABETH CASTRO - A WEB DEVELOPER FROM AUSTIN, TX</p>
+        <div class="about-description">
+            <p>
+              I am a full-stack web developer who loves to learn and overcome the challenges that come my way. I specialize in HTML, CSS, and Javascript. I have also accomplished building my own web app from the ground up using MongoDB, Express, EJS, and NodeJS. On my downtime I love to read and spend time with my family. Feel free to take a look at my most current projects below!
+            </p>
+        </div>
+        </a>
+    </div>
+    <div class="portfolio">
+        <a id="portfolio">
+        <h2 class="portfolio-title">PORTFOLIO</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col portfolio-image"><a href="#"><img src="https://i.imgur.com/Zw4FiEn.png"></a></div>
+            <div class="col portfolio-image"><a href="https://codepen.io/lizbabe14/full/mXEXJw/"><img src="https://i.imgur.com/6Xyq2yC.png?1"></a></div>
+            <div class="col portfolio-image"><a href="https://codepen.io/lizbabe14/full/paEWxm/"><img src="https://i.imgur.com/9KUYZm2.png?1"></a></div>
+          </div>
+        </div>
+        </a>
+    </div>
+    <div class="contact">
+      <a id="contact">
+        <h2 class="contact-title">CONTACT</h2>
+        <p id="contact-paragraph">I am currently available for hire, feel free to leave your information if you think my skills coud be of service to you!</p>
+        <form action="/contact" method="post" role="form">
+            <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Name" required="required">
+            <input type="text" class="form-control" name="email" placeholder="E-mail" required="required">
+            <textarea class="form-control" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea>
+            <button class="btn btn-primary btn-small">Submit</button>
+            </div>
+        </form>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/profile.php?id=578680222" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/elizabeth-castro-841537102/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/lizcastroprogrammer" class="fa fa-github-square"></a>
+        </div>
+      </a>
+    </div>
+</body>
+</html>
