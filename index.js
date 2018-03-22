@@ -4,6 +4,7 @@ var express = require("express"),
     nodemailer = require("nodemailer"),
     app = express();
 
+require("dotenv").config();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
@@ -18,13 +19,13 @@ app.post("/contact", function(req, res){
     var transporter = nodemailer.createTransport({
         service: "Yahoo",
         auth: {
-            user: "EMAIL_USER",
-            pass: "EMAIL_PASS"
+            user: process.env.GMAIL_USER,
+            pass: process.env.GMAIL_PASS
         }
     });
     var mailOptions = {
-        from: "AOL_USER",
-        to: "YAHOO_USER",
+        from: req.body.email,
+        to: process.env.GMAIL_USER,
         subject: "Portfolio Submission",
         text: "Name: "+req.body.name+"Email: "+req.body.email+"Message: "+req.body.message,
         html: "<ul><li>Name: "+req.body.name+"</li><li>Email: "+req.body.email+"</li><li>Message: "+req.body.message+"</li></ul>"
@@ -38,6 +39,7 @@ app.post("/contact", function(req, res){
            res.redirect("/");
        }
     });
+    console.log(process.env.GMAIL_USER);
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
