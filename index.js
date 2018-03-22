@@ -1,45 +1,46 @@
 var express = require("express"),
+    path = require("path"),
     bodyParser = require("body-parser"),
     nodemailer = require("nodemailer"),
     app = express();
 
-require("dotenv").config();
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(__dirname + "/public"));
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.get("/", function(req, res){
     res.render("portfolio");
 });
 
 app.post("/contact", function(req, res){
-    let mailOpts, smtpTrans;
-    smtpTrans = nodemailer.createTransport({
-        host: 'smtp.yahoo.com',
-        port: 465,
-        secure: true,
+    var transporter = nodemailer.createTransport({
+        service: "Gmail",
         auth: {
-            user: process.env.GMAIL_USER,
-            pass: process.env.GMAIL_PASS
+            user: "GMAIL_USER",
+            pass: "GMAIL_PASS"
         }
     });
-    mailOpts = {
-        from: req.body.name + '&lt;' + req.body.email + '&gt;',
-        to: process.env.GMAIL_USER,
-        subject: 'New message from contact form in portfolio',
-        text: '${req.body.name} (${req.body.email}) says: ${req.body.message}'
+    var mailOptions = {
+        from: "YAHOO_USER",
+        to: "GMAIL_USER",
+        subject: "Portfolio Submission",
+        text: "Name: "+req.body.name+"Email: "+req.body.email+"Message: "+req.body.message,
+        html: "<ul><li>Name: "+req.body.name+"</li><li>Email: "+req.body.email+"</li><li>Message: "+req.body.message+"</li></ul>"
     };
-    smtpTrans.sendMail(mailOpts, function(err, res){
-        if(err){
-            res.redirect("/");
-        } else {
-            res.send("contact success!");
-        }
+    transporter.sendMail(mailOptions, function(error, info){
+       if(error){
+           console.log(error);
+           res.redirect("/");
+       } else {
+           console.log("Message Sent: "+info.response);
+           res.redirect("/");
+       }
     });
 });
 
-app.listen(process.env.PORT, process.env.IP, function(req, res){
-    console.log("server started!");
+app.listen(process.env.PORT, process.env.IP, function(){
+    console.log("server is running...");
 });
-    
-    
+
