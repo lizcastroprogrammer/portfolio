@@ -19,13 +19,13 @@ app.post("/contact", function(req, res){
     var transporter = nodemailer.createTransport({
         service: "Yahoo",
         auth: {
-            user: process.env.GMAIL_USER,
-            pass: process.env.GMAIL_PASS
+            user: "lizbabe1489@gmail.com",
+            pass: "7l0v3d0g5"
         }
     });
     var mailOptions = {
         from: req.body.email,
-        to: process.env.GMAIL_USER,
+        to: "elizabethjcastro42@gmail.com",
         subject: "Portfolio Submission",
         text: "Name: "+req.body.name+"Email: "+req.body.email+"Message: "+req.body.message,
         html: "<ul><li>Name: "+req.body.name+"</li><li>Email: "+req.body.email+"</li><li>Message: "+req.body.message+"</li></ul>"
@@ -39,7 +39,6 @@ app.post("/contact", function(req, res){
            res.redirect("/");
        }
     });
-    console.log(process.env.GMAIL_USER);
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
