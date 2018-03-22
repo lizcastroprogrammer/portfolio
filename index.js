@@ -4,7 +4,6 @@ var express = require("express"),
     nodemailer = require("nodemailer"),
     app = express();
 
-require("dotenv").config();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
@@ -17,7 +16,7 @@ app.get("/", function(req, res){
 
 app.post("/contact", function(req, res){
     var transporter = nodemailer.createTransport({
-        service: "Yahoo",
+        service: "Gmail",
         auth: {
             user: "lizbabe1489@gmail.com",
             pass: "7l0v3d0g5"
