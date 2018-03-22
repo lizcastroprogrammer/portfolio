@@ -16,15 +16,15 @@ app.get("/", function(req, res){
 
 app.post("/contact", function(req, res){
     var transporter = nodemailer.createTransport({
-        service: "Gmail",
+        service: "Yahoo",
         auth: {
-            user: "GMAIL_USER",
-            pass: "GMAIL_PASS"
+            user: "EMAIL_USER",
+            pass: "EMAIL_PASS"
         }
     });
     var mailOptions = {
-        from: "YAHOO_USER",
-        to: "GMAIL_USER",
+        from: "AOL_USER",
+        to: "YAHOO_USER",
         subject: "Portfolio Submission",
         text: "Name: "+req.body.name+"Email: "+req.body.email+"Message: "+req.body.message,
         html: "<ul><li>Name: "+req.body.name+"</li><li>Email: "+req.body.email+"</li><li>Message: "+req.body.message+"</li></ul>"
