@@ -14,31 +14,31 @@ html, body {
   background-size: cover;
   z-index: -1;
   margin: 0;
-  height: 420px;
+  height: 570px;
 }
 
 #self-image {
-  border: 17px solid 	rgba(164,171,169, .2);
+  border: 10px solid 	rgba(164,171,169, .2);
   z-index: 1;
   box-shadow: none;
   border-radius: 50%;
-  margin-top: 40px;
-  width: 40%;
-  height: 40%;
+  margin-top: 110px;
+  width: 30%;
+  height: 30%;
   margin-bottom: 15px;
 }
 
 h1 {
   color: white;
   font-family: Oxygen;
-  font-size: 50px;
+  font-size: 55px;
   margin: 0 5px 0px 5px;
 }
 
 h3 {
   color: white;
   font-family: Oxygen;
-  font-size: 20px;;
+  font-size: 35px;;
   margin: 0px 5px 10px 5px;
 }
 
@@ -303,10 +303,15 @@ button {
   }
   .portfolio-title {
     padding-top: 73px;
+    padding-bottom: 90px;
     font-size: 60px;
   }
   .portfolio {
-    height: 1100px;
+    height: 580px;
+  }
+  img {
+    height: 170px;
+    width: 210px;
   }
   .contact-title {
     padding-top: 73px;
@@ -438,10 +443,5 @@ button {
     height: 5%;
   }
 }
-@media (min-width: 1800px) {
-  #self-image {
-    width: 15%;
-    height: 15%;
-  }
-}
+
 
