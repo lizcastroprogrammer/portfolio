@@ -2,122 +2,106 @@
     <html>
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-            <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+            <script src="/javascript/main.js"></script>
+            <link rel="stylesheet" type="text/css" href="/stylesheets/queries.css">
+            <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
         </head>
     <body>
-        <div class="background-image">
+        
+        <header class="background-image">
             <a id="home">
-            <div class="main-container">
-                <div class="image-self">
-                    <img class="img-responsive" id="self-image" src="https://i.imgur.com/4Cyueu9.jpg?2">
-                </div>
-                <div class="box">  
-                    <h1>Elizabeth Castro</h1>
-                    <h3>Web Developer</h3>
-                </div>
-            </div>
-            </a>
-        </div>
-
-<!--<nav class="navbar navbar-expand-lg sticky-top navbar-dark indigo">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#home">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">ABOUT</a>
-                </li>
-              <li><a class="link" href="#">MY SKILLS</a></li>
-              <li><a class="link" href="#">EXPERIENCE/EDUCATION</a></li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACT</a>
-                </li>
-          </ul>
-      </div>
-</nav>-->
-
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark indigo">
-  <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <a class="nav-link" href="#home">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">ABOUT</a>
-                </li>
-              <!--<li>
-                  <a class="link" href="#">MY SKILLS</a>
+            <div class="row">
+              <div class="mobile-nav"> 
+                <i class="fa fa-bars hamburger-icon" aria-hidden="true"></i> 
+              </div>
+              </div>
+              
+              <div class="row">
+                <div class="navbar">
+                <ul class="navbar-links">
+                  <li>
+                    <a class="link" href="#home">HOME</a>
                   </li>
-              <li>
-                  <a class="link" href="#">EXPERIENCE/EDUCATION</a>
-                  </li>-->
-                <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACT</a>
-                </li>
+                  <li>
+                     <a class="link" href="#about">ABOUT</a>
+                  </li>
+                  <li>
+                     <a class="link" href="#portfolio">PORTFOLIO</a>
+                  </li>
+                  <li>
+                     <a class="link" href="#contact">CONTACT</a>
+                  </li>
                 </ul>
-  </div>
-</nav>
+                </div>
+              </div>
+              
+                <div class="row">
+                    <div class="image-name-box">
+                        <img class="img-responsive" id="self-image" src="https://i.imgur.com/SmeHWAw.jpg?2">
+                        <h1>Elizabeth Castro</h1>
+                        <h3>Web Developer</h3>
+                    </div>
+                </div>
+            </a>
+        </header>
     
-    <div class="about-me">
-        <a id="about">
-        <h2 id="about-title">ABOUT ME</h2>
-        <p id="about-name">ELIZABETH CASTRO - A WEB DEVELOPER FROM AUSTIN, TX</p>
-        <div class="about-description">
-            <p>
-              I am a full-stack web developer who loves to learn and overcome the challenges that come my way. I specialize in HTML, CSS, and Javascript. I have also accomplished building my own web app from the ground up using MongoDB, Express, EJS, and NodeJS. On my downtime I love to read and spend time with my family. Feel free to take a look at my most current projects below!
-            </p>
-        </div>
-        </a>
-    </div>
-    <div class="portfolio">
-        <a id="portfolio">
-        <h2 class="portfolio-title">PORTFOLIO</h2>
-        <div class="container">
-          <div class="row">
-            <div class="col portfolio-image"><a href="https://secure-woodland-77150.herokuapp.com/books"><img src="https://i.imgur.com/Zw4FiEn.png"></a></div>
-            <div class="col portfolio-image"><a href="https://codepen.io/lizbabe14/full/mXEXJw/"><img src="https://i.imgur.com/6Xyq2yC.png?1"></a></div>
-            <div class="col portfolio-image"><a href="https://codepen.io/lizbabe14/full/paEWxm/"><img src="https://i.imgur.com/9KUYZm2.png?1"></a></div>
-          </div>
-        </div>
-        </a>
-    </div>
-    <div class="contact">
-      <a id="contact">
-        <h2 class="contact-title">CONTACT</h2>
-        <p id="contact-paragraph">I am currently available for hire, feel free to leave your information if you think my skills could be of service to you!</p>
-        <form action="/contact" method="post" role="form">
-            <div class="form-group">
-                <input type="text" class="form-control" name="name" placeholder="Name" required="required">
-                <input type="text" class="form-control" name="email" placeholder="E-mail" required="required">
-                <textarea class="form-control" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea>
-                <button class="btn btn-primary btn-small">Submit</button>
+        <section class="about-me">
+            <a id="about">
+                <h2>ABOUT ME</h2>
+                <div class="about-description">
+                    <p>ELIZABETH CASTRO - A WEB DEVELOPER FROM AUSTIN, TX</p>
+                    <p>I am a full-stack web developer who loves to learn and overcome the challenges that come my way. I specialize in HTML, CSS, and Javascript. I have also accomplished building my own web app from the ground up using MongoDB, Express, EJS, and NodeJS. On my downtime I love to read and spend time with my family. Feel free to take a look at my most current projects below!</p>
+                </div>
+            </a>
+        </section>
+    
+        <section class="portfolio">
+            <a id="portfolio">
+                <h2 class="portfolio-title">PORTFOLIO</h2>
+                <div class="row">
+                    <ul>
+                        <li class="portfolio-image">
+                            <a href="https://secure-woodland-77150.herokuapp.com/books">
+                                <img src="https://i.imgur.com/Zw4FiEn.png">
+                            </a>
+                        </li>
+                        <li class="portfolio-image">
+                            <a href="https://codepen.io/lizbabe14/full/mXEXJw/">
+                                <img src="https://i.imgur.com/6Xyq2yC.png?1">
+                            </a>
+                        </li>
+                        <li class="portfolio-image">
+                            <a href="https://codepen.io/lizbabe14/full/paEWxm/">
+                                <img src="https://i.imgur.com/9KUYZm2.png?1">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </a>
+        </section>
+    
+        <section class="contact">
+          <a id="contact">
+            <h2 class="contact-title">CONTACT</h2>
+            <p id="contact-paragraph">I am currently available for hire, feel free to leave your information if you think my skills could be of service to you!</p>
+            <form action="/contact" method="post" role="form">
+                <div class="form">
+                    <input type="text" class="form-control" name="name" placeholder="Name" required="required">
+                    <input type="text" class="form-control" name="email" placeholder="E-mail" required="required">
+                    <textarea class="form-control" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea>
+                    <button class="btn btn-primary btn-small">Submit</button>
+                </div>
+            </form>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/profile.php?id=578680222" class="facebook"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com/in/elizabeth-castro-841537102/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/lizcastroprogrammer" class="github"><i class="fa fa-github-square"></i></a>
             </div>
-        </form>
-        <div class="social-media-icons">
-            <a href="https://www.facebook.com/profile.php?id=578680222" class="fa fa-facebook"></a>
-            <a href="https://www.linkedin.com/in/elizabeth-castro-841537102/" class="fa fa-linkedin"></a>
-            <a href="https://github.com/lizcastroprogrammer" class="fa fa-github-square"></a>
-        </div>
-      </a>
-    </div>
-</body>
+          </a>
+        </section>
+    
+    </body>
 </html>

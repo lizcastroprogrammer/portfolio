@@ -1,0 +1,7 @@
+@media (min-width: 800px) {
+  .hamburger-icon { display: none;}
+  
+  .toggle {
+    display: inline-block;
+  }
+}
