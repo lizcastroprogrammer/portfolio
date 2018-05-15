@@ -3,7 +3,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /*----REUSABLE-----*/
@@ -86,11 +86,12 @@ h3 {
 }
 
 .hamburger-icon {
-  display: block;
   float: right;
   font-size: 200%;
   margin: 4px;
 }
+
+.logo { display: none;}
 
 .navbar-links { display: none;}
 
@@ -138,9 +139,9 @@ h3 {
   letter-spacing: 1px;
 }
 
-.about-description p {
-  padding: 5px;
-}
+.about-description p { padding: 5px;}
+
+.about-description p:last-of-type { padding-bottom: 40px;}
 
 /*------------------*/
 /*    PORTFOLIO     */
@@ -155,9 +156,6 @@ h3 {
   margin-left: 3.5%;
   list-style-type: none;
   padding-left: 0;
-}
-
-.portfolio-image li {
 }
 
 .portfolio-image img {
@@ -180,13 +178,13 @@ h3 {
   font-size: 110%;
   line-height: 1.5;
   letter-spacing: 1px;
-  margin-bottom: 45px;
+  margin-bottom: 8%;
 }
 
 input,
 textarea,
 button {
-  margin: 13px 0;
+  margin: 17px 0;
   font-size: 110%;
   padding: 4px;
   border-radius: 5px;
@@ -207,6 +205,10 @@ textarea {
   margin-left: 5%;
 }
 
+textarea {
+  margin-bottom: 40px;
+}
+
 button {
   display: block;
   width: 75px;
@@ -215,6 +217,7 @@ button {
   color: white;
   border-color: #374AF7;
   transition: background-color 0.2s, box-shadow 0.2s;
+  margin-bottom: 20%;
 }
 
 button:hover {

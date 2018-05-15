@@ -4,10 +4,10 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="/javascript/main.js"></script>
-            <link rel="stylesheet" type="text/css" href="/stylesheets/queries.css">
             <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+            <link rel="stylesheet" type="text/css" href="/stylesheets/queries.css">
         </head>
     <body>
         
@@ -21,20 +21,23 @@
               
               <div class="row">
                 <div class="navbar">
-                <ul class="navbar-links">
-                  <li>
-                    <a class="link" href="#home">HOME</a>
-                  </li>
-                  <li>
-                     <a class="link" href="#about">ABOUT</a>
-                  </li>
-                  <li>
-                     <a class="link" href="#portfolio">PORTFOLIO</a>
-                  </li>
-                  <li>
-                     <a class="link" href="#contact">CONTACT</a>
-                  </li>
-                </ul>
+                    <div class="logo">
+                        <p>EC</p>
+                    </div>
+                    <ul class="navbar-links">
+                        <li>
+                            <a class="link" href="#home">HOME</a>
+                          </li>
+                        <li>
+                            <a class="link" href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
                 </div>
               </div>
               
@@ -62,19 +65,19 @@
             <a id="portfolio">
                 <h2 class="portfolio-title">PORTFOLIO</h2>
                 <div class="row">
-                    <ul>
+                    <ul class="clearfix">
                         <li class="portfolio-image">
-                            <a href="https://secure-woodland-77150.herokuapp.com/books">
+                            <a target="_blank" href="https://secure-woodland-77150.herokuapp.com/books">
                                 <img src="https://i.imgur.com/Zw4FiEn.png">
                             </a>
                         </li>
                         <li class="portfolio-image">
-                            <a href="https://codepen.io/lizbabe14/full/mXEXJw/">
+                            <a target="_blank" href="https://codepen.io/lizbabe14/full/mXEXJw/">
                                 <img src="https://i.imgur.com/6Xyq2yC.png?1">
                             </a>
                         </li>
                         <li class="portfolio-image">
-                            <a href="https://codepen.io/lizbabe14/full/paEWxm/">
+                            <a target="_blank" href="https://codepen.io/lizbabe14/full/paEWxm/">
                                 <img src="https://i.imgur.com/9KUYZm2.png?1">
                             </a>
                         </li>
@@ -87,14 +90,16 @@
           <a id="contact">
             <h2 class="contact-title">CONTACT</h2>
             <p id="contact-paragraph">I am currently available for hire, feel free to leave your information if you think my skills could be of service to you!</p>
-            <form action="/contact" method="post" role="form">
-                <div class="form">
-                    <input type="text" class="form-control" name="name" placeholder="Name" required="required">
-                    <input type="text" class="form-control" name="email" placeholder="E-mail" required="required">
-                    <textarea class="form-control" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea>
-                    <button class="btn btn-primary btn-small">Submit</button>
-                </div>
-            </form>
+            <div class="row">
+                <form action="/contact" method="post" role="form">
+                    <div class="form">
+                        <input type="text" class="form-control" name="name" placeholder="Name" required="required">
+                        <input type="text" class="form-control" name="email" placeholder="E-mail" required="required">
+                        <textarea class="form-control" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea>
+                        <button class="btn btn-primary btn-small">Submit</button>
+                    </div>
+                </form>
+            </div>
             <div class="media-icons">
                 <a href="https://www.facebook.com/profile.php?id=578680222" class="facebook"><i class="fa fa-facebook-square"></i></a>
                 <a href="https://www.linkedin.com/in/elizabeth-castro-841537102/" class="linkedin"><i class="fa fa-linkedin"></i></a>

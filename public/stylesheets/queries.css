@@ -1,7 +1,182 @@
-@media (min-width: 800px) {
-  .hamburger-icon { display: none;}
-  
-  .toggle {
+@media (min-width: 750px) {
+  .mobile-nav { display: none;}
+
+  .logo {
     display: inline-block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: white;
+    background-color: #686868;
+    margin: 3px;
+    margin-left: 13px;
+    text-align: center;
+  }
+  
+  .logo p {
+    font-size: 117%;
+    padding-top: 5px;
+    margin: 0;
+  }
+
+  .navbar {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.98);
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 2px #ECECEC;
+    padding-left: 10px;
+  }
+  
+  .navbar-links {
+    display: block;
+    list-style-type: none;
+    float: right;
+    font-size: 110%;
+    margin-top: 12px;
+  }
+  
+  .navbar-links li {
+    padding-right: 8px;
+    display: inline-block;
+  }
+  
+  .navbar-links li a { transition: border-bottom 0.2s;}
+  
+  .navbar-links li:last-of-type { padding-right: 25px;}
+
+  .navbar-links li a:link,
+  .navbar-links li a:visited {
+    color: #686868;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .navbar-links li a:hover,
+  .navbar-links li a:active {
+    padding-bottom: 7px;
+    border-bottom: 3px solid #686868;
+  }
+
+  .image-name-box { padding-top: 25%;}
+}
+
+@media (min-width: 1000px) {
+  .navbar { height: 50px;}
+  
+  .logo {
+    width: 43px;
+    height: 43px;
+    margin: 4px;
+  }
+  
+  .logo p {
+    font-size: 124%;
+    padding-top: 8px;
+    margin: 0;
+  }
+
+  .navbar-links { 
+    font-size: 117%;
+    margin-top: 14.5px;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-links li a:hover,
+  .navbar-links li a:active {
+    padding-bottom: 10px;
+  }
+  
+  .image-name-box { padding-top: 17%;}
+  
+  #self-image {
+    border: 15px solid	rgba(164,171,169, .2);
+    width: 22%;
+    height: 22%;
+  }
+  
+  h1 { font-size: 355%;}
+
+  h2 { 
+    font-size: 280%;
+    padding-top: 50px;
+  }
+  
+  .about-description { margin: 4% 14%;}
+  
+  .portfolio-image img {
+    width: 31%;
+    height: 31%;
+    float: left;
+    margin: 4% 1%;
+    margin-bottom: 8%;
+  }
+  
+  .clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  .contact p { 
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  
+  form {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  input,
+  textarea,
+  button { font-size: 120%;}
+  
+  button { width: 85px;}
+}
+
+@media (min-width: 1600px) {
+  
+  h1 { font-size: 420%;}
+
+  h2 { font-size: 340%;}
+  
+  h3 { font-size: 290%;}
+  
+  .image-name-box { padding-top: 15%;}
+  
+  #self-image {
+    border: 19px solid	rgba(164,171,169, .2);
+    width: 19%;
+    height: 19%;
+  }
+  
+  .about-description { 
+    margin: 2% 17%;
+    padding-bottom: 1%;
+  }
+  
+  .about-description p {
+    line-height: 1.75;
+  }
+  
+  .about-description p:first-child { font-size: 130%;}
+  
+  .contact p { 
+    margin-bottom: 5%;
+  }
+  
+  form { width: 45%;}
+  
+  input,
+  textarea,
+  button { font-size: 130%;}
+  
+  textarea { margin-bottom: 70px;}
+  
+  button { 
+    width: 108px;
+    margin-bottom: 30%;
   }
 }
